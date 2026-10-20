@@ -65,4 +65,4 @@ After this, all future changes are deployed automatically via the pipeline.
 
 ### EventBridge Automation
 
-The stack includes an EventBridge rule that automatically triggers the Lambda every 2 minutes to list the files in the S3 bucket.
+The stack includes an EventBridge rule that automatically triggers the Lambda every 100 minutes to list the files in the S3 bucket.

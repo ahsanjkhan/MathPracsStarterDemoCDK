@@ -32,8 +32,8 @@ export class MathPracsStarterDemoStack extends cdk.Stack {
 
     const scheduleRule = new events.Rule(this, 'ListBucketFilesSchedule', {
       ruleName: 'mathpracs-starter-demo-list-bucket-files-schedule',
-      description: 'Triggers list bucket files Lambda every 2 minutes',
-      schedule: events.Schedule.rate(cdk.Duration.minutes(2)),
+      description: 'Triggers list bucket files Lambda every 100 minutes',
+      schedule: events.Schedule.rate(cdk.Duration.minutes(100)),
     });
 
     scheduleRule.addTarget(new targets.LambdaFunction(listBucketFilesLambda));
